@@ -1,0 +1,167 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+#container {
+	min-height: 100%;
+}
+
+#main {
+	padding-bottom: 5px;
+	background-image: url(blacktexture.webp);
+	text-align: center;
+}
+#main ul {
+	font-size: 18px;
+	display: inline-flex;
+	
+	list-style: none;
+	color: white;
+}
+#main ul li {
+	width: 120px;
+	margin: 15px;
+	padding: 15px;
+}
+#main ul li a {
+	text-decoration: none;
+	color: white;
+}
+.active, #main ul li:hover {
+	background-color: grey;
+	border-radius: 5px;
+}
+.sub-menu {
+	display: none;
+	font-size: 15px;
+}
+
+#main ul li:hover .sub-menu {
+	display: block;
+	position: absolute;
+	background-image: url(blacktexture.webp);
+	margin-top: 15px;
+	margin-bottom: -15px;
+	margin-left: -13px;
+	border-radius: 5px;
+	z-index: 1;
+}
+
+#main ul li:hover .sub-menu ul {
+	display: block;
+	margin: 10px;
+}
+
+#main ul li:hover .sub-menu ul li {
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+
+#main ul li:hover .sub-menu ul li:last-child {
+	border-bottom: none;
+}
+
+#main ul li:hover .sub-menu ul li a:hover {
+	color: grey;
+}
+#container {
+	background-image: url(jojo1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+	background-size: 100% 100%;
+}
+#centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: black;
+	border: 5px solid black;
+	border-radius: 10px;
+	padding: 20px;
+	opacity: 0.7;
+
+}
+#centered:hover {
+	opacity: 0.9;
+}
+#centered h1 {
+	font-size: 50px;
+	color: white;
+
+}
+#footer {
+	background-image: url(blacktexture.webp);
+	position: relative;
+	height: 100px;
+	margin-top: -80px;
+	clear: both;
+}
+#footer .about {
+	padding-top: 15px;
+	text-align: center;
+}
+#footer .about ul {
+	display: inline-flex;
+	list-style: none;
+	font-size: 18px;
+}
+#footer .about ul li {
+	width: 120px;
+	padding: 15px;
+	margin-top: -15px;
+}
+#footer .about ul li a {
+	text-decoration: none;
+	color: white;
+}
+#footer .about ul li a:hover {
+	color: grey;
+}
+#footer .credit {
+	text-align: center;
+}
+#footer .credit h1 {
+	color: white;
+	opacity: 0.6;
+}
+@media (max-width: 670px) {
+	#main ul {
+		font-size: 15px;
+		display: inline-flex;
+	}
+	#main ul li {
+		width: 75px;
+		padding: 10px;
+		margin: 10px;
+	}
+}
+@media (max-width: 958px) {
+	#centered h1{
+		font-size: 40px;
+	}
+}
+@media (max-width: 790px){
+	#centered h1{
+		font-size: 30px;
+	}
+}
+@media (max-width: 640px){
+	#centered h1{
+		font-size: 20px;
+	}
+}
